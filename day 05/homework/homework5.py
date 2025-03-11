@@ -2,7 +2,7 @@
 fahrenheit = float(input("შეიყვანეთ ტემპერატურა ფარენგეიტში: "))
 
 # ვთვლით ცელსიუსში გადაყვანილ ტემპერატურას
-celsius = (fahrenheit - 32) * 5/9
+celsius = fahrenheit - 32 * 5/9
 
 # ვბეჭდავთ შედეგს
 print("ტემპერატურა ცელსიუსში:", celsius)
