@@ -1,4 +1,5 @@
-text = input("Enter a string: ")
+word = "hoodbyair"
 
-for text in range(0, len(text), 2):
-    print(text[text], end="") 
+for index in range(len(word)):
+    if index % 2 == 0:
+        print(word[index])
