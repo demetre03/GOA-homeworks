@@ -1,0 +1,45 @@
+/* Basic body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+/* Header style */
+#main-header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Main text style */
+.text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* Box Model Example */
+.box-model-example {
+  background: #ffffff;
+  color: #333;
+  border: 2px solid #4a90e2;     /* border: გარე ჩარჩო */
+  padding: 20px;                  /* padding: შიგნით სივრცე */
+  margin: 30px auto;              /* margin: გარე სივრცე */
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* optional: ჩრდილი */
+}
+
+/* Footer style */
+#main-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
