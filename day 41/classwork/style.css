@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: #E8F9FF;
+}
+
+section {
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    background-color: yellow;
+}
+
+main {
+    display: flex; /* main ხდება flex container — შიდა ელემენტები (section-ები) გადადიან flex სისტემაში */
+
+    flex-direction: row; /* ელემენტები განლაგდებიან მარცხნიდან მარჯვნივ (row არის default მნიშვნელობა) */
+    /* სხვა მნიშვნელობები:
+       column - ელემენტები ზემოდან ქვემოთ
+       row-reverse - მარჯვნიდან მარცხნივ
+       column-reverse - ქვემოდან ზემოთ */
+
+    justify-content: center; /* მთავარი ღერძის (horizontal) გასწვრივ ელემენტები განლაგდებიან ცენტრში */
+    /* სხვა მნიშვნელობები:
+       flex-start - მარცხენა მხარეს განლაგება
+       flex-end - მარჯვენა მხარეს განლაგება
+       space-between - ელემენტები თანაბრად შუალედებით, კიდეებისკენ მიჭრილი
+       space-around - თანაბარი სივრცე ელემენტების გარშემო
+       space-evenly - ყველა სივრცე თანაბრად გადანაწილებული */
+
+    align-items: center; /* მეორე ღერძზე ვერტიკალურად განლაგდება ელემენტები ცენტრში */
+    /* სხვა მნიშვნელობები:
+       flex-start - ელემენტები ზემოთ არიან მიჭრილნი
+       flex-end - ქვემოთ არიან მიჭრილნი
+       stretch - იჭიმებიან მთელი სიმაღლის მიხედვით 
+       baseline - ტექსტის ხაზის მიხედვით ასწორებენ თავს */
+
+    border: 5px solid red;
+    width: 900px;
+    height: 900px;
+}
+
