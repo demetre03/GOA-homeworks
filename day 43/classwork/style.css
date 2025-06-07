@@ -1,0 +1,118 @@
+/* გუგლის ფონტის "Karla"-ს შემოტანა */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* ყველა ელემენტისთვის ნულოვანი გარე და შიდა ზღვარი და box-sizing-ის დადგენა */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif; /* ფონტის დაყენება მთელ გვერდზე */
+}
+
+/* body-სთვის სრული ეკრანის სიმაღლე და ცენტრში განლაგება flex-ით */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ვერტიკალურად ცენტრში */
+    align-items: center;     /* ჰორიზონტალურად ცენტრში */
+    background-color: hsl(204, 43%, 93%); /* ღია ცისფერი ფონი */
+}
+
+/* მთავარი კონტეინერის სტილი */
+.mainDiv {
+    border-radius: 5px; /* ოდნავ მომრგვალებული კუთხეები */
+    overflow: hidden;   /* შიდა ელემენტები არ გადმოვიდეს კონტეინერის ფარგლებს გარეთ */
+}
+
+/* პირველი სექციის (თეთრი ფონიანი) სტილი */
+.firstDiv {
+    background-color: white;
+    height: 200px;
+    padding: 30px;
+}
+
+/* პირველი აბზაცი – ცისფერი ტექსტი */
+.paragraph1 {
+    color: #26a8a6;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* მეორე აბზაცი – მწვანე ტექსტი */
+.paragraph2 {
+    color: #BEDF31;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* მესამე აბზაცი – ნაცრისფერი ტექსტი */
+.paragraph3 {
+    color: hsl(218, 22%, 67%);
+}
+
+/* ორი ბლოკის გვერდიგვერდ განლაგება */
+.twoDivsTogether {
+    display: flex;
+    flex-direction: row; /* ჰორიზონტალურად განლაგება */
+}
+
+/* მარცხენა ბლოკი – მუქი ცისფერი ფონი */
+.first {
+    background-color: #2BB4B1;
+    padding: 30px;
+    width: 50%; /* ეკრანის ნახევარი */
+}
+
+/* მეოთხე აბზაცი – თეთრი ტექსტი */
+.paragraph4 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* ყველა h2 ელემენტი – თეთრი ტექსტი */
+h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* h2-ის შიგნით მყოფი span – ცისფერი ტექსტი და პატარა ზომა */
+h2 span {
+    color: hsl(179, 61%, 52%);
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* მეხუთე აბზაცი – თეთრი ტექსტი */
+.paragraph5 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* ღილაკის სტილი */
+button {
+    background-color: #BEDF31; /* მწვანე */
+    border: none;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+/* მარჯვენა ბლოკი – ღია ცისფერი ფონი */
+.second {
+    background-color: #49BEBD;
+    padding: 30px;
+    width: 50%;
+}
+
+/* მეექვსე აბზაცი – ღია ცისფერი ტექსტი */
+.paragraph6 {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    margin-bottom: 3px;
+}

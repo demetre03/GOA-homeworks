@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1a2d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #15273f;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #8bacda;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.eth {
+  color: #00fff7;
+  font-weight: bold;
+}
+
+.time {
+  color: #8bacda;
+  display: flex;
+  align-items: center;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  border-top: 1px solid #2f415b;
+  padding-top: 15px;
+}
+
+.creator img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid white;
+}
+
+.creator span {
+  color: #8bacda;
+}
+
+.creator strong {
+  color: white;
+}

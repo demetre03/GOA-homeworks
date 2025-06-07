@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 30px;
+  text-align: center;
+}
+
+.star img {
+  background: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  width: 40px;
+}
+
+h1 {
+  color: hsl(213, 19%, 18%);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: hsl(211, 10%, 45%);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.rating-buttons input[type="radio"] {
+  display: none;
+}
+
+.rating-btn {
+  background: hsl(210, 46%, 95%);
+  color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rating-buttons input[type="radio"]:checked + label {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.rating-btn:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.submit-btn {
+  background: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: background-color 0.3s ease;
+}

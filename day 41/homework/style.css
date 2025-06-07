@@ -1,98 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f2ebe3;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
 }
 
-.container {
-  padding: 20px;
+#main {
+    width: 600px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px hsl(0, 0%, 80%);
+    transition: 0.3s;
 }
 
-.card {
-  display: flex;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  max-width: 640px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+#main:hover {
+    scale: 1.01;
+    box-shadow: 5px 5px 10px hsl(158, 36%, 37%)
 }
 
-.image-side img {
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-  object-fit: cover;
+#left {
+    width: 50%;
 }
 
-.info-side {
-  padding: 30px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#left img {
+    width:100%;
+    height: 100%;
 }
 
-.label {
-  font-size: 12px;
-  letter-spacing: 5px;
-  color: #9a9a9a;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+#right {
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1c232b;
-  margin-bottom: 18px;
+#top-title {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Montserrat;
+    font-size: 14px;
 }
 
-.desc {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #6c7289;
-  margin-bottom: 24px;
+h1 {
+    font-family: fraunces;
 }
 
-.price-section {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
+#description {
+    font-size: 14px;
+    font-family: montserrat;
+    color: hsl(228, 12%, 48%);
 }
 
-.price {
-  font-size: 28px;
-  font-weight: 700;
-  color: #3c8067;
+#prices {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-.old-price {
-  font-size: 14px;
-  text-decoration: line-through;
-  color: #6c7289;
+#prices p:nth-child(1) {
+    font-weight: 700;
+    font-size: 33px;
+    color: hsl(158, 36%, 37%);
+    font-family: fraunces;
+
 }
 
-.add-btn {
-  background-color: #3c8067;
-  color: white;
-  padding: 14px;
-  font-size: 14px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+#prices p:nth-child(2) {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 15.5px;
 }
 
-.add-btn:hover {
-  background-color: #2e6550;
+button {
+    padding: 10px 0;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
