@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.box:hover {
+  transform: rotate(20deg) scale(1.2) translate(30px, 20px);
+}

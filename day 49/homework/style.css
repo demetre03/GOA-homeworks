@@ -1,0 +1,59 @@
+/* ძირითადი სტილი */
+body {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* ------------------------------------
+  1. TRANSITION & SCALE & BORDER-RADIUS
+-------------------------------------*/
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50;
+  border-radius: 50%; /* ელემენტი ხდება მრგვალი */
+  transition: all 0.5s ease; /* ცვლილებები ნელა ხდება */
+}
+
+/* hover-ზე scale-ით ვზრდით და border-radius-ს ვცვლით */
+.circle:hover {
+  transform: scale(1.5); /* ელემენტი იზრდება */
+  border-radius: 0%;      /* მრგვალი ხდება კვადრატი */
+}
+
+/* ------------------------------------
+  2. ROTATE მაგალითი
+-------------------------------------*/
+
+.rotate-box {
+  width: 100px;
+  height: 100px;
+  background-color: #2196F3;
+  transition: transform 0.5s;
+}
+
+/* hover-ზე ელემენტი ბრუნდება საათის ისრის მიმართულებით */
+.rotate-box:hover {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------
+  3. TRANSLATE მაგალითი
+-------------------------------------*/
+
+.translate-box {
+  width: 100px;
+  height: 100px;
+  background-color: #FF9800;
+  transition: transform 0.5s;
+}
+
+/* hover-ზე ელემენტი მოძრაობს x-ზე მარცხნივ და y-ზე ქვემოთ */
+.translate-box:hover {
+  transform: translate(-50px, 50px);
+}
