@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h2 {
+  color: #2ab2af;
+  margin-bottom: 10px;
+}
+
+.guarantee {
+  color: #c0df34;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #7f8c8d;
+}
+
+.content {
+  display: flex;
+  background: #2ab2af;
+  color: white;
+}
+
+.subscription, .features {
+  flex: 1;
+  padding: 30px;
+}
+
+.subscription {
+  background: #2ab2af;
+  text-align: center;
+}
+
+.subscription .price {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.subscription .price span {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.subscription button {
+  background: #c0df34;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+}

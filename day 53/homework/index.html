@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator (Fixed 15%)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="inputs">
+      <label>Bill<br>
+        <input type="number" id="bill" placeholder="0.00" min="0">
+      </label>
+
+      <label>Tip Percent</label>
+      <div class="tips">
+        <span class="tip-static">15%</span>
+      </div>
+
+      <label>Number of People<br>
+        <input type="number" id="people" placeholder="0" min="1">
+        <span class="error" id="people-error">Can't be zero</span>
+      </label>
+    </div>
+
+    <div class="results">
+      <div class="result-row">
+        <div>
+          <p>Tip Amount<br><span>/ person</span></p>
+        </div>
+        <p id="tip-per-person">$0.00</p>
+      </div>
+
+      <div class="result-row">
+        <div>
+          <p>Total<br><span>/ person</span></p>
+        </div>
+        <p id="total-per-person">$0.00</p>
+      </div>
+
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
