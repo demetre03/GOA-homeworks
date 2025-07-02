@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="checkNumber()">Enter a number</button>
+
+  <script>
+    function checkNumber() {
+      let input = prompt("Please enter a number:");
+      let number = parseInt(input);
+
+      if (number) {
+        alert("Invalid input. Please enter a valid number");
+        return;
+      }
+
+      if (number % 2 === 0) {
+        alert("The number you entered is even");
+      } else {
+        alert("The number you entered is odd");
+      }
+    }
+  </script>
+
+</body>
+</html>
